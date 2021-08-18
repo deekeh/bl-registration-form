@@ -1,6 +1,6 @@
 :root {
-  --green: rgb(59, 187, 0);
-  --green-blur: rgb(68, 214, 0);
+  --green: #fff;
+  --green-blur: #eee;
   --grey: #333;
 }
 
@@ -53,6 +53,7 @@ h1 {
   margin-bottom: 10px;
 }
 
+
 .full {
   grid-column: span 2;
 }
@@ -73,6 +74,30 @@ h1 {
   padding: 16px;
   background-color: var(--grey);
   font-size: 1.2rem;
+}
+
+/* form validation handling */
+.form-field.success .text {
+  border-color: #0f0;
+  color: #0f0;
+}
+.form-field.success label {
+  color: #0f0;
+}
+.form-field.error .text {
+  border-color: #f00;
+  color: #f00;
+}
+.form-field.error label {
+  color: #f00;
+}
+.form-field.success small {
+  display: none;
+}
+.form-field small {
+  color: #f00;
+  margin-top: 5px;
+  display: block;
 }
 
 .form-field label {
