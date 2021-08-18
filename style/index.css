@@ -50,6 +50,24 @@ h1 {
   }
 }
 
+.cursor {
+  background-color: #fff;
+  visibility: visible;
+  animation: cursorblink 1s steps(1, start) infinite;
+}
+@keyframes cursorblink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 .form-group {
   margin-bottom: 10px;
 }
