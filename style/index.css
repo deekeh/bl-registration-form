@@ -31,6 +31,7 @@ form {
   column-gap: 10px;
   row-gap: 15px;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 500px;
 }
 @media screen and (max-width: 576px) {
   form {
@@ -81,6 +82,9 @@ h1 {
   border-color: #0f0;
   color: #0f0;
 }
+.form-field label {
+  font-style: italic;
+}
 .form-field.success label {
   color: #0f0;
 }
@@ -121,6 +125,9 @@ h1 {
 
 textarea {
   resize: none;
+}
+.form-field:has(textarea) {
+  grid-column: span 2;
 }
 
 button {
