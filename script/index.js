@@ -86,7 +86,7 @@ const validate = () => {
       password2.parentElement.classList.add('error');
       return "Both the passwords should match";
     }
-    else if (!/^[a-zA-Z0-9]{8,}$/.test(p1Value)) {
+    else if (!/^(?=.*?[!@#$%^_+&*]{1})(?=.*?[A-Z]+)(?=.*?\d+).{8,}$/.test(p1Value)) {
       // password.parentElement.className = 'form-field error';
       // password2.parentElement.className = 'form-field error';
       password.parentElement.classList.remove('success');
