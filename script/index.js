@@ -93,7 +93,7 @@ const validate = () => {
       password.parentElement.classList.add('error');
       password2.parentElement.classList.remove('success');
       password2.parentElement.classList.add('error');
-      return "Password should contain at least 1 lower case letter, upper case letter, digit, special character and should be at least 8 characters long";
+      return "Password should contain at least 1  upper case letter, digit, 1 special character and should be at least 8 characters long";
     }
     else {
       password.parentElement.className = 'form-field success';
